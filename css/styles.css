@@ -1,0 +1,683 @@
+@font-face {
+    font-family: OpenSansYhordi;
+    src: url('./00-recursos-frecuentes-css/opensans/OpenSans-Italic-VariableFont_wdth\,wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.6rem;
+}
+/*Styles de nav que rebota como pelota*/
+.navegacion{
+    transform: translateY(-100%);
+    animation:  botar 3s infinite ;
+}
+
+@keyframes botar {
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(-100%);
+    }
+}
+.menu li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/*Estilos de card usuario victor*/
+
+.layout{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E47D91;
+}
+
+.layout_main {
+    min-width: 35rem;
+    border-radius: 2rem;
+
+    box-shadow: 0px 0px 15px #EA5370;
+}
+
+.main_user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    background-color: #EA5370;
+    border-radius:2rem 2rem 0 0;
+    color: white;
+    gap: 7px;
+}
+.user_container-img{
+    margin-top: 4rem;
+    width: 150px;
+    height: 150px;
+   
+}
+.user_img{
+    border: white 5px solid;
+    border-radius: 1000px;
+}
+
+.user_name, .follow_number{
+    font-weight: bold;
+}
+
+.user_city{
+    font-weight: 500;
+}
+
+.main_follows{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.follows_follow{
+    text-align: center;
+}
+
+.folloe_subtitle{
+    color: gray;
+
+}
+.user_name, .user_nick, .user_city,  .folloe_subtitle{
+    font-size: 1rem;
+}
+
+/*estilos de encabezado proyecto 3*/
+
+.container_encabezado{
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container_encabezado h2{
+    background-color: black;
+    color: white;
+}
+.container_encabezado a{
+    text-decoration: none;
+    color: red;
+}
+
+.container_encabezado a:hover{
+    text-decoration: underline;
+}
+
+.container_encabezado p {
+    border: 1px solid rgba(0, 89, 255, 0.667);
+    padding: 10px;
+}
+
+
+/*Traduccion de documento*/
+.layaut_main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.header_top {
+    color: rgb(11, 56, 255);
+    margin-bottom: 20px;
+    display:  flex;
+    justify-content: space-between;
+}
+.header_botton form{
+    display: flex;
+    gap: 20px;
+}
+.header_botton form label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-header-input{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.097);
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: black;
+}
+.select-lenguaje{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.097);
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: black;
+}
+.fa-magnifying-glass{
+ position: absolute; 
+ right:  10px;
+ font-size: 21px;
+}
+
+.main_voz{
+    display: flex;
+    justify-content: space-between;
+}
+.main_voz div{
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: rgb(62, 103, 252);
+    display: flex;
+   
+}
+.main_voz div i{
+    color: wheat;
+    margin: auto ;
+}
+
+main {
+ text-align: center;
+}
+.traduccion-raya{
+    margin: 40px auto;
+    position: relative;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.traduccion-raya .linea{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.342);
+  
+    
+}
+.traduccion-raya h6{
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    padding: 0 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main .container-results{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    text-align: start;
+    margin-bottom: 20px;
+    list-style: outside;
+}
+
+main .item-result strong {
+    color: rgb(25, 25, 246);
+}
+
+.seccion-traductor{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.seccion-traductor{
+    color: rgb(39, 39, 201);
+}
+.seccion-traductor h5{
+    color: gray;
+}
+.footer-traductor{
+    font-size: 13px;
+    color: gray;
+}
+
+/*Correo card*/
+.main-correo{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(19, 96, 60);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-correo h5{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.correo-form{
+    min-width: 25rem;
+}
+.correo-form .coreo {
+    background-color: white;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem
+}
+
+.correo-form .coreo i{
+    color: rgb(27, 61, 255);
+}
+
+.container-form {
+    margin-top: 10px;
+ background-color: white;
+ padding: 15px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.container-form div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.container-form div .rango-value{
+    color: rgb(0, 68, 255);
+   
+}
+
+.correo-range{
+    width: 100%;
+    cursor: pointer;
+}
+
+.correo-form .correo-checkbox{
+    display: flex;
+    align-items: center;
+justify-content: flex-start;
+font-size: 1.3rem;
+gap: 5px;
+cursor: pointer;
+}
+
+.correo-form .correo-checkbox input:hover{
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgb(37, 110, 255);
+}
+
+.perzonalizado{
+    background-color: black;
+    color: rgb(106, 105, 105);
+    font-size: 1.3rem;
+    text-align: start;
+    padding: 10px;
+}
+.container-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(0, 68, 255);
+    color: white;
+    border: 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.container-form button:hover{
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+/*Estilos de planes y precios */
+
+.layaut-main-precios{
+    width: 100%;
+    height: 100vh;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF2F7;
+}
+
+.precios-title{
+    color: #EA5370;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.cards-planes{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 12px;
+}
+.card hr{
+    border: rgba(128, 128, 128, 0.143) solid 0.1px;
+}
+.card .plane{
+    font-size: 16px;
+    font-weight: 600;
+}
+.card .precios{
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+.cards-planes .card p{
+    font-family: OpenSansYhordi;
+    padding: 8px 0;
+ font-size: 14px;
+ font-weight: 700;
+}
+
+
+.cards-planes .card .comprar{
+    width: 100%;
+    background-color: rgb(248, 114, 136);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.cards-planes .card:hover{
+    transform: scale(1.08);
+    background-color: #EA5370;
+    color: white;
+    transition-property: transform background-color color;
+    transition:  0.3s ease-out ;
+}
+.cards-planes .card:hover hr{
+    border: rgba(255, 255, 255, 0.209) solid 0.2px;
+}
+.cards-planes .card:hover .comprar{
+    background-color: white;
+    color: #E47D91;
+}
+
+.toggle-suscribir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    gap: 10px;
+}
+
+.toggle--switch{
+    position: relative;
+    width: 4rem;
+    display: inline-block;
+}
+.toggle--switch .checkbox{
+    position:absolute;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+}
+.toggle--switch .toggle--slider{
+    width: 100%;
+    height: 2rem;
+    background-color: #dadada;
+    border-radius: 25px;
+    cursor: pointer;
+   
+}
+.toggle--switch .toggle--slider::before{
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color:#ffffff ;
+    top: 0.3rem;
+    left: 0.3rem;
+    border-radius: 100px;
+    transition: transform 300ms ease-in-out;
+
+}
+
+.checkbox:checked+.toggle--slider{
+    background-color: #EA5370;
+}
+
+.checkbox:checked+.toggle--slider::before{
+    transform: translateX(30px);
+}
+/*Estilos de hotel buscador*/
+
+.body-hotel{
+    background-color: rgb(47, 38, 38);
+    height: 100vh;
+}
+.header-hotel{
+    margin-bottom: 35px;
+}
+.header-hotel .hotel-title{
+    color: white;
+    font-size: 2rem;
+    font-family: OpenSansYhordi;
+    text-align: center;
+    padding: 30px 0;
+}
+.form-search .container-search{
+    display: flex;
+    justify-content: center;
+}
+.container-search .search-hotel{
+    width: 100%;
+    max-width: 450px;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px 0px 0px 10px;
+}
+.container-search .container-logo{
+    background-color: green;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+.container-logo .logo-search {
+    width: 25px;
+    height: 25px;
+}
+.main-hotel{
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main-hotel .hotel-detalles{
+    top: -60px;
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.hotel-detalles .hotel-seccion{
+    padding: 0 30px;
+}
+.hotel-detalles .hotel-seccion p{
+    font-size: 14px;
+}
+ .hotel-detalles .hotel-seccion h6{
+    font-size: 1.3rem;
+}
+
+.hotel-detalles .item2{
+    border-left: 1px solid rgba(0, 0, 0, 0.176);
+    border-right: 1px solid rgba(0, 0, 0, 0.177);
+}
+.main-hotel .hotel-mapa{
+    width: 100%;
+    
+}
+
+/*Estilos de frases rotativas*/
+
+.body-frases{
+    background-color: #dadada;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.body-frases .main-frase{
+    text-align: start;
+}
+.body-frases .frase-rotado{
+    font-size: 5rem;
+    position: relative;
+    display: block;
+    animation: rotate 13s cubic-bezier(0.91, -0.02, 0.14, 1.13) infinite ;
+}
+.saludo .title_text{
+    height: 8rem;
+    overflow: hidden;
+}
+
+@keyframes rotate{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-7.8rem);
+    }
+    50%{
+        transform: translateY(-15.6rem);
+    }
+    75%{
+        transform: translateY(-23.0rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*Estilos de cronometro*/
+
+.main-cronometro{
+    height: 100vh;
+    background-color: rgb(156, 156, 227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-cronometro .cronometro-contador{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(13, 16, 67);
+   padding: 2rem;
+    border-radius: 500px;
+
+}
+
+.container-cronometro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    border: greenyellow 9px solid;
+    border-radius: 500px;
+    border-left: 8px solid transparent;
+}
+.cronometro-contador time{
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow:1px 1px 20px #dadada91, 1px -10px 6px #05ffd8, 1px -17px 14px #213af8;
+}
+.metodos-cronometro{
+    display: flex;
+    gap: 20px;
+}
+.metodos-cronometro button{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: greenyellow;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.metodos-cronometro button:hover{
+    background-color: white;
+    color: rgb(5, 5, 110);
+    transition: background-color 0.4s ease;
+}
+
+.cronometro-modos{
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color:  rgb(13, 16, 67);
+    border-radius: 100px;
+}
+.cronometro-modos button{
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+}
+.cronometro-modos button:first-child,
+.cronometro-modos button:hover{
+    background-color: greenyellow;
+    color:  rgb(13, 16, 67);
+}
