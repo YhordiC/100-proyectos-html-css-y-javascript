@@ -43,7 +43,7 @@ body {
 
 .layout{
     width: 100%;
-    height: 100%;
+    height: 800px;
     padding: 3rem 0;
     display: flex;
     justify-content: center;
@@ -53,7 +53,8 @@ body {
 }
 
 .layout_main {
-    min-width: 35rem;
+    width: 100%;
+    max-width: 35rem;
     border-radius: 2rem;
 
     box-shadow: 0px 0px 15px #EA5370;
@@ -146,6 +147,7 @@ body {
     max-width: 70rem;
     margin: 0 auto;
     padding: 20px;
+    height: auto;
 }
 
 
@@ -270,7 +272,7 @@ main .item-result strong {
 .main-correo{
 
     width: 100%;
-    height: 100vh;
+    height: 900px;
     background-color: rgb(19, 96, 60);
     display: flex;
     flex-direction: column;
@@ -284,7 +286,8 @@ main .item-result strong {
 }
 
 .correo-form{
-    min-width: 25rem;
+    width: 100%;
+    max-width: 25rem;
 }
 .correo-form .coreo {
     background-color: white;
@@ -363,12 +366,14 @@ cursor: pointer;
 /*Estilos de planes y precios */
 
 .layaut-main-precios{
-    width: 100%;
-    height: 100vh;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
     background-color: #ECF2F7;
 }
 
@@ -379,8 +384,10 @@ cursor: pointer;
 }
 .cards-planes{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -489,7 +496,7 @@ cursor: pointer;
 
 .body-hotel{
     background-color: rgb(47, 38, 38);
-    height: 100vh;
+    height: 900px;
 }
 .header-hotel{
     margin-bottom: 35px;
@@ -534,6 +541,7 @@ cursor: pointer;
     width: 100%;
     max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: white;
     padding: 30px;
@@ -563,8 +571,8 @@ cursor: pointer;
 /*Estilos de frases rotativas*/
 
 .body-frases{
+height: 900px;
     background-color: #dadada;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,6 +587,47 @@ cursor: pointer;
     display: block;
     animation: rotate 13s cubic-bezier(0.91, -0.02, 0.14, 1.13) infinite ;
 }
+
+@media (max-width: 1181px){
+    .saludo .title_text{
+        height: 7rem;
+        line-height: 1.8;
+    }
+.body-frases  .frase-rotado{
+       font-size: 4rem;
+    }
+   }
+
+   @media (max-width: 935px){
+    .saludo .title_text{
+        height: 6rem;
+        line-height: 2.4;
+    }
+.body-frases  .frase-rotado{
+       font-size: 3rem;
+    }
+   }
+
+
+   @media (max-width: 705px){
+    .saludo .title_text{
+        height: 5rem;
+        line-height: 3.55;
+    }
+.body-frases  .frase-rotado{
+       font-size: 2rem;
+    }
+   }
+
+   @media (max-width: 705px){
+    .saludo .title_text{
+        height: 4rem;
+        line-height: 6.55;
+    }
+.body-frases  .frase-rotado{
+       font-size: 1.3rem;
+    }
+   }
 .saludo .title_text{
     height: 8rem;
     overflow: hidden;
@@ -605,13 +654,13 @@ cursor: pointer;
 /*Estilos de cronometro*/
 
 .main-cronometro{
-    height: 100vh;
     background-color: rgb(156, 156, 227);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    height: 900px;
 }
 
 .main-cronometro .cronometro-contador{
@@ -620,9 +669,25 @@ cursor: pointer;
     background-color: rgb(13, 16, 67);
    padding: 2rem;
     border-radius: 500px;
+   
 
 }
-
+@media (max-width: 768px){
+ .cronometro-contador{
+    transform: scale(0.8);
+ }
+}
+@media (max-width: 428px){
+    .cronometro-contador{
+       transform: scale(0.6);
+    }
+   }
+@media (max-width:428px){
+   .main-cronometro .cronometro-modos{
+        border-radius: 10px;
+        margin: 5px;
+    }
+}
 .container-cronometro{
     width: 100%;
     height: 100%;
@@ -661,6 +726,7 @@ cursor: pointer;
 
 .cronometro-modos{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 15px;
     background-color:  rgb(13, 16, 67);
@@ -707,6 +773,7 @@ cursor: pointer;
     object-fit: cover;
 }
 .video-body h1{
+    text-align: center;
     color: white;
     margin-bottom: 30px;
     animation: shadowtext 2s ease-in infinite ;
@@ -735,7 +802,7 @@ cursor: pointer;
 /* card ladin auto*/
 .movil-main{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -747,12 +814,27 @@ cursor: pointer;
     max-width: 800px;
     display: flex;
 }
+
+@media (max-width: 768px){
+    .conntainer-movie{
+        flex-wrap: wrap;
+        max-width: 400px;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .container-img img{
+        border-radius: 20px;
+    }
+
+}
 .container-img{
     height: auto;
     width: 800px;
    
 }
 .container-img img{
+    height: 100%;
     border-bottom-left-radius:20px ;
     border-top-left-radius: 20px;
 }
@@ -816,7 +898,7 @@ cursor: pointer;
 
 .grid-main{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     display: grid;
    grid-template-areas:
    'header header header'
@@ -833,6 +915,23 @@ cursor: pointer;
    'footer footer footer';
 }
 
+@media (max-width:870px) {
+    .grid-main{
+        grid-template-areas:
+   'header header header'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'main main main'
+   'footer footer footer';
+    }
+}
 .header-grid{
     background-color: rgb(255, 55, 0);
     grid-area: header;
@@ -876,6 +975,12 @@ cursor: pointer;
     text-align: center;
     padding-top: 20px;
     font-weight: 800;
+}
+
+@media (max-width: 870px) {
+    .nav-grid{
+        display: none;
+    }
 }
 
 .footer-grid{
@@ -942,6 +1047,11 @@ cursor: pointer;
     text-align: center;
     font-weight: 600;
 }
+@media (max-width: 425px) {
+    .valor span{
+        letter-spacing: -1.5px;
+    }
+}
 
 .valor .bara{
     background-color: #0bddbe;
@@ -993,6 +1103,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap:30px ;
 }
 
@@ -1074,9 +1185,10 @@ cursor: pointer;
 
 .main-register{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     display: flex;
     justify-content: center;
+  
     align-items: center;
     background-color: #c4c0c0;
 }
@@ -1086,12 +1198,18 @@ cursor: pointer;
     width: 100%;
     max-width: 900px;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
     font-size: 19px;
 }
-
+@media (max-width: 602px) {
+    .container-registro .list-pasos{
+        width: 100%;
+        flex-direction: row;
+    }
+}
 .list-pasos{
     width: 35%;
     background: linear-gradient(to bottom, rgb(115, 6, 193), #bc70bc);
@@ -1099,6 +1217,7 @@ cursor: pointer;
     padding: 20px;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
 }
@@ -1170,8 +1289,9 @@ cursor: pointer;
 /*estilos de hover efecto*/
 .cnt-efecto{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     display: flex;
+      flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
