@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(200, 229, 255);
+}
+main p{
+    width: min-content;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+   
+}
+main div button{
+    border: none;
+    background-color: orangered;
+    padding: 5px;
+    color: wheat;
+    border-radius: 5px;
+    cursor: pointer;
+}
