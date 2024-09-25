@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body h1{
+    text-align: center;
+    font-size: 42px;
+    margin: 20px 0;
+}
+.main-multi{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.tabla-multi{
+    display: grid;
+    gap: 9px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.tabla{
+    background:linear-gradient(to bottom, rgb(115, 6, 193), #bc70bc);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 10px;
+}
+.tabla h6{
+    font-size: 18px;
+}
