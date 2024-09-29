@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(to right, #ddefee, #7bb0f9);
+    font-weight: 900;
+}
+
+main h6{
+    font-size: 80px;
+    color: rgb(153, 6, 202);
+}
+main p{
+    font-size: 80px;
+}
+main  p:nth-child(3){
+    font-size: 40px;
+}
