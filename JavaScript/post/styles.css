@@ -1,0 +1,62 @@
+body{
+    background-color: aliceblue;
+}
+form{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ width: 100%;
+ max-width: 500px;
+ margin: 20px auto;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form label {
+    font-weight: 600;
+}
+form input {
+    padding: 10px;
+    border: 0 solid transparent;
+}
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color:  rgb(46, 119, 255);
+    border: none;
+    border-radius: 5px;
+}
+form button:hover{
+    background-color: black;
+    color: white;
+}
+.ctn-post{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.post{
+    background-color: rgb(46, 119, 255) ;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.post h1{
+    background-color: black ;
+    padding: 5px;
+}
+
+.post p{
+    height: 50px;
+    overflow: hidden;
+}
+
+.post button{
+    cursor: pointer;
+}
