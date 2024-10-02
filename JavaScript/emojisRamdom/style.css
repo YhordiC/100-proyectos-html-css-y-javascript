@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to bottom, #040c3f 0%, #001c3a 100%);
+}
+
+.ctn-emoji{
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(3, 6, 24);
+    color: wheat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+h5{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+span{
+    margin: 0 auto;
+    font-size: 45px;
+}
+span:hover{
+filter:saturate(5);
+}
